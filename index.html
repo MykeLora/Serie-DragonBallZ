@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Serie de Dragon Ball Z</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Dragon Ball Z</a>
+
+        <nav class="navbar">
+          <a href="Aboutme.html" class="active">About me</a>
+        </nav>
+
+    </header>
+    <hr>
+    <br>
+
+    
+    <div>
+      <h1>Explorando el Universo de Dragon Ball Z</h1>
+      <h2>Descubre los Detalles Fascinantes de tus Personajes Favoritos</h2>
+    </div>
+    
+    <div id="personajes-container">
+       
+        <div class="personaje-container">
+          <img src="image/diosgoju.png" alt="Goku" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Goku', 'Son', '12 de diciembre', 'El guerrero más fuerte', 'Kamehameha')">Ver Detalles</button>
+        </div>
+    
+        <div class="personaje-container">
+          <img src="image/imag3.jpeg" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Vegeta', 'Saiyan', '15 de agosto', 'El príncipe de los Saiyan', 'Final Flash')">Ver Detalles</button>
+        </div>
+    
+        <div class="personaje-container">
+          <img src="image/imag4.jpeg" alt="Gohan" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Gohan', 'Son', '18 de mayo', 'El estudioso guerrero', 'Masenko')">Ver Detalles</button>
+        </div>
+
+        <div class="personaje-container">
+          <img src="image/trunk.png" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Trunks', 'Briefs','14 de junio', 'El guerrero del futuro', 'Espada de energía')">Ver Detalles</button>
+        </div>
+      
+        <div class="personaje-container">
+          <img src="image/cells.jpeg" alt="Gohan" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Cell','Celmanio','1 de noviembre','El bioandroide perfecto', 'Absorción')">Ver Detalles</button>
+        </div>
+        <br>
+
+        <div class="personaje-container">
+          <img src="image/krillin.webp" alt="Goku" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Krillin','El calvo de las nenas','18 de diciembre', 'El amigo leal','Destructo Disc')">Ver Detalles</button>
+        </div>
+      
+        <div class="personaje-container">
+          <img src="image/bulma.jpg" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Bulma','Briefs','18 de agosto', 'Genio científico','Inventora talentosa')">Ver Detalles</button>
+        </div>
+      
+        <div class="personaje-container">
+          <img src="image/Goten.jpg" alt="Gohan" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Goten', 'Son', '20 de marzo', 'Joven guerrero Saiyan', 'Super Kamehameha')">Ver Detalles</button>
+        </div>
+  
+        <div class="personaje-container">
+          <img src="image/chanya.jpg" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Yamcha','Cara cortada','3 de marzo', 'El lobo solitario', 'Wolf Fang Fist' )">Ver Detalles</button>
+        </div>
+        
+        <div class="personaje-container">
+          <img src="image/Androide17.jpg" alt="Gohan" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Android 17', 'El que parece embra','12 de febrero', 'Androide poderoso','Energy Wave' )">Ver Detalles</button>
+        </div><br>
+
+        <div class="personaje-container">
+          <img src="image/frezerblue.jpeg" alt="Goku" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal( 'Frieza', 'El fustrado','1 de agosto','Emperador del universo',  'Death Ball')">Ver Detalles</button>
+        </div>
+        
+        <div class="personaje-container">
+          <img src="image/Picoloo.jpg" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Piccolo', 'El verdoso','9 de mayo','Namekiano sabio y poderoso', 'Makankosappo')">Ver Detalles</button>
+        </div>
+        
+        <div class="personaje-container">
+          <img src="image/Wish1.jpg" alt="Gohan" class="personaje-img" ><br>
+          <button class="detalle-btn" onclick="mostrarModal('Whis','El pacifíco','7 de abril','Ángel celestial', 'Temporal Do-Over')">Ver Detalles</button>
+        </div>
+    
+        <div class="personaje-container">
+          <img src="image/DiosDestructor.jpg" alt="Vegeta" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Beerus','El comelon' ,  '15 de noviembre' ,'Dios de la Destrucción', 'Hakai')">Ver Detalles</button>
+        </div>
+          
+        <div class="personaje-container">
+          <img src="image/broly.jpg" alt="Gohan" class="personaje-img"><br>
+          <button class="detalle-btn" onclick="mostrarModal('Broly', 'Saya', '18 de noviembre', 'El guerrero controlado', 'Berserke')">Ver Detalles</button>
+        </div><br>
+        <!-- Agrega más personajes según sea necesario -->
+      </div>
+    
+        <!-- Ventana modal -->
+      <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+              <h2 id="modalNombre"></h2>
+              <hr>
+              <br>
+              <p><strong>Apellido:</strong> <span id="modalApellido"></span></p>
+              <p><strong>Fecha de Nacimiento:</strong> <span id="modalFechaNacimiento"></span></p>
+              <p><strong>Descripción:</strong> <span id="modalDescripcion"></span></p>
+              <p><strong>Habilidad/Característica Principal:</strong> <span id="modalHabilidad"></span></p>
+          </div>
+      </div>
+      
+      <script src="models.js"></script>
+</body>
+</html>
