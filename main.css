@@ -10,7 +10,7 @@
 
 body {
   background-color: none;
-  margin-top: 70px; /* Ajuste para evitar que el contenido se superponga con la barra de navegación */
+  margin-top: 70px;
 }
 
 h1,h2{
